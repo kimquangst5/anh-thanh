@@ -1,0 +1,48 @@
+div(class="z-[99] sticky top-0  dark:bg-[red] py-[20px] px-[10px]")
+	div(class="flex justify-between")
+		div(class="font-bold text-[20px]") Winners Farm
+		div(class="flex items-center gap-x-[10px]")
+			
+
+			form(action="", method="get" class="flex items-center border-[1px] border-[black]/40 rounded-[10px]")
+				input(
+					type="text",
+					name="keyword",
+					placeholder="Nhập từ khóa tìm kiếm..."
+					class="outline-none px-[15px] py-[5px] bg-transparent"
+				)
+				button(type="submit" class="fa-light fa-magnifying-glass px-[10px] order-first") 
+			div(class="flex gap-x-[5px]")
+				div Xin chào,
+				div(class="font-bold") Adminitrator
+			div(class="dropdown dropdown-end")
+				div(tabindex="0", role="button", class="fa-light fa-gear fa-spin m-1")
+				ul(tabindex="0", class="menu dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow")
+					details(close)
+						summary(class="rounded-[5px]")
+							i(class="fa-light fa-users")
+							| Chủ đề
+						div(class="form-control")
+							label(class="label cursor-pointer gap-4")
+								span(class="label-text") Default
+								input(type="radio", name="theme-radios", class="radio theme-controller", value="default")
+						div(class="form-control")
+							label(class="label cursor-pointer gap-4")
+								span(class="label-text") Dark
+								input(type="radio", name="theme-radios", class="radio theme-controller", value="dark")
+						div(class="form-control")
+							label(class="label cursor-pointer gap-4")
+								span(class="label-text") Retro
+								input(type="radio", name="theme-radios", class="radio theme-controller", value="retro")
+						div(class="form-control")
+							label(class="label cursor-pointer gap-4")
+								span(class="label-text") Cyberpunk
+								input(type="radio", name="theme-radios", class="radio theme-controller", value="cyberpunk")
+						div(class="form-control")
+							label(class="label cursor-pointer gap-4")
+								span(class="label-text") Valentine
+								input(type="radio", name="theme-radios", class="radio theme-controller", value="valentine")
+						div(class="form-control")
+							label(class="label cursor-pointer gap-4")
+								span(class="label-text") Aqua
+								input(type="radio", name="theme-radios", class="radio theme-controller", value="aqua")

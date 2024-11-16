@@ -1,0 +1,92 @@
+div(class="drawer lg:drawer-open w-auto")
+	input#my-drawer-2(type="checkbox", class="drawer-toggle")
+	div(class="drawer-content flex flex-col items-center justify-center")
+		// Page content here
+		label(for="my-drawer-2", class="btn btn-primary drawer-button lg:hidden")
+			| Open drawer
+	div(class="drawer-side ")
+		label(for="my-drawer-2", aria-label="close sidebar", class="drawer-overlay")
+		ul(class="menu bg-[#1C2434] text-[#dee4ee] text-[16px] min-h-full w-80 p-4 flex gap-1.5")
+			li(class="hover:bg-[#333A48] rounded-[5px]")
+				a
+					i(class="fa-light fa-grid-2")
+					| Tổng quan
+			label(class="uppercase text-[#8a99af] pl-[20px] py-[10px] tracking-widest") quản lí chung
+			li
+				details(close)
+					summary(class="hover:bg-[#333A48] rounded-[5px]")
+						i(class="fa-light fa-users")
+						| Người dùng
+					ul(class="text-[#8a99af]")
+						li(class="hover:text-[#dee4ee]")
+							a Thêm người dùng
+						li(class="hover:text-[#dee4ee]")
+							a Danh sách
+			li(class="hover:text-[#dee4ee] hover:bg-[#333A48] rounded-[5px]")
+				a
+					i(class="fa-light fa-blog")
+					| Blog
+			li
+				details(close)
+					summary(class="hover:bg-[#333A48] rounded-[5px]")
+						i(class="fa-light fa-star")
+						| Đánh giá
+					ul(class="text-[#8a99af]")
+						li(class="hover:text-[#dee4ee]")
+							a Blog
+						li(class="hover:text-[#dee4ee]")
+							a Người dùng / công ty
+			label(class="uppercase text-[#8a99af] pl-[20px] py-[10px] tracking-widest") bài đăng
+			li
+				details(close)
+					summary(class="hover:bg-[#333A48] rounded-[5px]")
+						i(class="fa-light fa-circle-dollar")
+						| Tuyển dụng
+					ul(class="text-[#8a99af]")
+						li(class="hover:text-[#dee4ee]")
+							a Danh sách
+						li(class="hover:text-[#dee4ee]")
+							a Duyệt bài
+			li(class="hover:text-[#dee4ee] hover:bg-[#333A48] rounded-[5px]")
+				a
+					i(class="fa-light fa-bell")
+					| Thông báo bài đăng
+			label(class="uppercase text-[#8a99af] pl-[20px] py-[10px] tracking-widest") tài chính
+			li
+				details(close)
+					summary(class="hover:bg-[#333A48] rounded-[5px]")
+						i(class="fa-light fa-grid-2")
+						| Doanh thu
+					ul(class="text-[#8a99af]")
+						li(class="hover:text-[#dee4ee]")
+							a Theo thời gian
+						li(class="hover:text-[#dee4ee]")
+							a Theo nhà tuyển dụng
+			li
+				details(close)
+					summary(class="hover:bg-[#333A48] rounded-[5px]")
+						i(class="fa-light fa-chart-user")
+						| P2P
+					ul(class="text-[#8a99af]")
+						li(class="hover:text-[#dee4ee]")
+							a Giao dịch
+						li(class="hover:text-[#dee4ee]")
+							a Duyệt trả lương
+			label(class="uppercase text-[#8a99af] pl-[20px] py-[10px] tracking-widest") hệ thống
+			li(class="hover:text-[#dee4ee] hover:bg-[#333A48] rounded-[5px]")
+				a
+					i(class="fa-light fa-file-check")
+					| Chính sách và điều khoản
+			label(class="uppercase text-[#8a99af] pl-[20px] py-[10px] tracking-widest") cài đặt
+			li(class="hover:text-[#dee4ee] hover:bg-[#333A48] rounded-[5px]")
+				a
+					i(class="fa-light fa-square-rss")
+					| SEO
+			li(class="hover:text-[#dee4ee] hover:bg-[#333A48] rounded-[5px]")
+				a
+					i(class="fa-light fa-screwdriver-wrench")
+					| Cài đặt chung
+			li(class="hover:text-[#dee4ee] hover:bg-[#333A48] rounded-[5px]")
+				a
+					i(class="fa-light fa-desktop")
+					| Giao diện

@@ -1,0 +1,18 @@
+doctype html
+html(lang="vi" data-theme="light")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title #{pageTitle ? pageTitle : "Kim Quang"} | Kim Quang
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css")
+		link(rel="stylesheet", href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css")
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css")
+		link(rel="stylesheet", href="/admin/css/style.css")
+		script(src="https://cdn.tailwindcss.com") 
+	body
+		div(class="flex h-screen overflow-hidden")
+			//- div(class="overflow-y-auto overflow-x-hidden no-scrollbar")
+			include ../partials/Sider.pug
+			div(class="flex flex-1 relative flex-col")
+				include ../partials/Header.pug
+				block main
